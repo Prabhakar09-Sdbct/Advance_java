@@ -1,24 +1,22 @@
-package in.com.rays.stmt;
+package com.pm.pstmt;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.Statement;
+import java.sql.PreparedStatement;
 
-public class TestUpdate {
-	
+public class TestDelete {
+
 	public static void main(String[] args) throws Exception {
-		
+
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		
+
 		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "root");
-		
-		Statement stmt = conn.createStatement();
-		
-		int i = stmt.executeUpdate("update marksheet set name='jack' where id=3");
-		
-		System.out.println("data updated = " + i);
-		
-		
+
+		PreparedStatement pstmt = conn.prepareStatement("delete from marksheet where id=3");
+
+		int i = pstmt.executeUpdate();
+
+		System.out.println("data deleted = " + i);
 	}
 
 }

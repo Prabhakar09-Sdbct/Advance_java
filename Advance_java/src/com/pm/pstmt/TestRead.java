@@ -1,4 +1,4 @@
-package in.com.rays.pstmt;
+package com.pm.pstmt;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

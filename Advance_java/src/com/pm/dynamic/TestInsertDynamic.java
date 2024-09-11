@@ -1,4 +1,4 @@
-package in.com.rays.dynamic;
+package com.pm.dynamic;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

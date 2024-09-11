@@ -1,12 +1,12 @@
-package in.com.rays.stmt;
+package com.pm.stmt;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-public class TestDelete {
+public class TestUpdate {
 	
-	public static void main(String[] args) throws Exception{
+	public static void main(String[] args) throws Exception {
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		
@@ -14,9 +14,10 @@ public class TestDelete {
 		
 		Statement stmt = conn.createStatement();
 		
-		int i = stmt.executeUpdate("delete from marksheet where id=2");
+		int i = stmt.executeUpdate("update marksheet set name='jack' where id=3");
 		
-		System.out.println("data deleted = " + i);
+		System.out.println("data updated = " + i);
+		
 		
 	}
 

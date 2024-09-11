@@ -1,4 +1,4 @@
-package in.com.rays.stmt;
+package com.pm.stmt;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
