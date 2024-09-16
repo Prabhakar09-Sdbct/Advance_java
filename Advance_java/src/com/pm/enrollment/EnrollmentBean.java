@@ -7,7 +7,7 @@ public class EnrollmentBean {
 	private int id;
 	private int studentId;
 	private Date enrollmentDate;
-	private char grade;
+	private String grade;
 	private String status;
 
 	public int getId() {
@@ -33,12 +33,12 @@ public class EnrollmentBean {
 	public void setEnrollmentDate(Date enrollmentDate) {
 		this.enrollmentDate = enrollmentDate;
 	}
-
-	public char getGrade() {
+	
+	public String getGrade() {
 		return grade;
 	}
 
-	public void setGrade(char grade) {
+	public void setGrade(String grade) {
 		this.grade = grade;
 	}
 
