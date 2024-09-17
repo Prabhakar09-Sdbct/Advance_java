@@ -13,7 +13,7 @@ public class TestMarksheet {
 		MarksheetModal modal = new MarksheetModal();
 		MarksheetBean bean = new MarksheetBean();
 
-		bean.setId(5);
+		bean.setId(5); 
 		bean.setRollNo(15);
 		bean.setName("peter");
 		bean.setPhysics(72);
