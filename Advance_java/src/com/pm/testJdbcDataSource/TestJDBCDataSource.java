@@ -1,8 +1,10 @@
-package com.pm.util;
+package com.pm.testJdbcDataSource;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
+import com.pm.util.JDBCDataSource;
 
 public class TestJDBCDataSource {
 
